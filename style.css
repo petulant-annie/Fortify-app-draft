@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.wrapper{
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+.wrapp{
+    margin: 0 auto;
+    max-width: 1004px;
+    height: 100%;
+}
+
+.header_bg{
+    left: -280px;
+    top: -13px;
+    position: absolute;
+    z-index: -1;
+    background-color: #222628;
+}
+
+.header{
+    padding: 40px 65px 65px 0;
+    max-height: 1342px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+.logo_name{
+    padding-left: 16px;
+    color: #ffffff;
+    font-family: "Open Sans Semibold", sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.3px;
+}
+
+.menu_item{
+    padding-left: 35px; 
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.7;
+    font-size: 15px;
+    letter-spacing: 0.34px;
+}
+
+.description{
+    max-width: 706px;
+    padding-top: 135px; 
+    padding-left: 200px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.description_h{
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: 0.3px;
+}
+
+.description_p{
+    max-width: 250px;
+    padding-top: 16px;
+    padding-bottom: 40px;
+    font-size: 12px;
+    opacity: 0.52;
+    line-height: 18px;
+}
+
+.button{
+    width: 125px;
+    height: 36px;
+    color: #ffffff;
+    font-size: 13px;
+    border-radius: 2px;
+    background-image: linear-gradient(180deg, #4da3fc 0%, #027eff 100%);
+}
+
+.work_description_bg{
+    
+    background-color: #faf9f9;
+}
+
+.block_head{
+    color: #282e32;
+    font-family: "Open Sans Semibold", sans-serif;
+    font-size: 28px;
+    line-height: 43px;
+    letter-spacing: 0.09px;
+}
+
+.block_span{
+    color: #009cfb;
+    letter-spacing: 0.09px;
+}
+
+.work_description_item{
+    display: inline-block;
+    padding-top: 47px;
+    width: calc((100% / 3) - 10px);
+}
+
+.work_img{
+    height: 200px;
+    width: 320px;
+}
+
+
+
+.download_button{
+    width: 490px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #979797;
+    display: inline-block;  
+}
+
+.download_img{
+    float: left;
+}
+
+.download_description{
+    /* padding-top: 27px; */
+    text-align: left;
+    color: #282e32;
+    font-size: 18px;
+    /* line-height: 25px; */
+}
+.download_description_p{
+   
+    opacity: 0.52;
+    color: #282e32;
+    text-align: left;
+}
