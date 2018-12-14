@@ -21,7 +21,6 @@ body{
 .wrapp{
     margin: 0 auto;
     max-width: 1004px;
-    height: 100%;
 }
 
 .header_bg{
@@ -153,4 +152,11 @@ body{
     opacity: 0.52;
     color: #282e32;
     text-align: left;
+}
+
+.footer_a{
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.5;
+    font-size: 13px;
 }
