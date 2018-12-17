@@ -197,7 +197,7 @@ body {
     border: none;
 }
 
-.faq_table_question, faq_table_answer::not(:last-child){
+.faq_table_question, .faq_table_answer::not(:last-child){
     border-bottom: #3b4044;
 }
 
@@ -214,7 +214,7 @@ details summary::-webkit-details-marker {
     border-collapse: collapse;
 }
 
-th, td {
+.th, .td {
     text-align: center;
     border: 1px solid lightgray;
     vertical-align: middle;
