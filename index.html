@@ -6,282 +6,278 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,600,700,800"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,600,700,800" rel="stylesheet">
     <title>Fortify App</title>
 </head>
 
 <body>
-<div class="header_bg">
-    <header class="header">
-        <div class="logo">
-            <img class="shield" src="images/logo.png" alt="">
-            <div class="logo_name">Fortify</div>
-        </div>
-        <div class="menu">
-            <a class="menu_item" href="#how_it_works">How it works</a>
-            <a class="menu_item" href="https://github.com/PeculiarVentures/fortify">GitHub</a>
-            <a class="menu_item" href="#download">Download</a>
-            <a class="menu_item" href="#">My Certificates</a>
-            <a class="menu_item" href="#faq">FAQ</a>
-        </div>
-    </header>
-    <div class="wrapper">
-        <div class="header_description">
-            <div class="header_description_h">
-                Fortify enables cross-browser usage of local
-                certificates and smart cards
+    <div class="header_bg">
+        <header class="header">
+            <div class="logo">
+                <img class="shield" src="images/logo.png" alt="">
+                <div class="logo_name">Fortify</div>
             </div>
-            <div class="header_description_p">Avaliable for macOS, Windows 7 and later
-                Browsers IE 11, Edge, Safari, and Chrome
+            <div class="menu">
+                <a class="menu_item" href="#how_it_works">How it works</a>
+                <a class="menu_item" href="https://github.com/PeculiarVentures/fortify">GitHub</a>
+                <a class="menu_item" href="#download">Download</a>
+                <a class="menu_item" href="#">My Certificates</a>
+                <a class="menu_item" href="#faq">FAQ</a>
             </div>
-            <a class="header_btn" href="#download">Download App</a>
-        </div>
-        <div class="slider">
-            <img src="images/slider_icon.png" alt="">
+        </header>
+        <div class="wrapper">
+            <div class="header_description">
+                <div class="header_description_h">
+                    Fortify enables cross-browser usage of local
+                    certificates and smart cards
+                </div>
+                <div class="header_description_p">Avaliable for macOS, Windows 7 and later
+                    Browsers IE 11, Edge, Safari, and Chrome
+                </div>
+                <a class="header_btn" href="#download">Download App</a>
+            </div>
+            <div class="slider">
+                <img class="slider_img" src="images/slider_icon.png" alt="">
+            </div>
         </div>
     </div>
-</div>
-<div class="work_description_bg">
-    <div class="wrapper">
-        <div class="work_description"><a name="how_it_works"></a>
-            <div class="block_head">What does <span class="block_span">Fortify</span> do ?</div>
-            <div class="work_description_elems">
-                <div class="work_description_item">
-                    <img class="work_description_img" src="images/pic_notebook.png" alt="">Use your smart card or
-                    security token that has already been
-                    enrolled with a certificate with web applications.
-                    <div class="work_description_p"></div>
-                </div>
-                <div class="work_description_item">
-                    <img class="work_description_img" src="images/pic_award.png" alt="">Enroll for a new
-                    certificate or renew an existing one.
-                    <div class="work_description_p"></div>
-                </div>
-                <div class="work_description_item">
-                    <img class="work_description_img" src="images/pic_docs.png" alt="">Build applications that can
-                    sign/verify or encrypt/decrypt
-                    using locally installed certificates, smart cards or security tokens.
-                    <div class="work_description_p"></div>
+    <div class="work_description_bg">
+        <div class="wrapper">
+            <div class="work_description"><a name="how_it_works"></a>
+                <div class="block_head">What does <span class="block_span">Fortify</span> do ?</div>
+                <div class="work_description_elems">
+                    <div class="work_description_item">
+                        <img class="work_description_img" src="images/pic_notebook.png" alt="">Use your smart card or
+                        security token that has already been
+                        enrolled with a certificate with web applications.
+                    </div>
+                    <div class="work_description_item">
+                        <img class="work_description_img" src="images/pic_award.png" alt="">Enroll for a new
+                        certificate or renew an existing one.
+                    </div>
+                    <div class="work_description_item">
+                        <img class="work_description_img" src="images/pic_docs.png" alt="">Build applications that can
+                        sign/verify or encrypt/decrypt
+                        using locally installed certificates, smart cards or security tokens.
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="wrapper">
-    <div class="download"><a name="download"></a>
-        <div class="block_head">Download App</div>
-        <button class="download_button">
-            <img class="download_img" src="images/mac_icon.png" alt="">
-            <div class="download_description">
-                Download for Mac
-            </div>
-            <div class="download_description_p">
-                macOS 10.9 and later
-            </div>
-        </button>
-        <button class="download_button">
-            <img class="download_img" src="images/win_icon.png" alt="">
-            <div class="download_description">
-                Download for Windows
-            </div>
-            <div class="download_description_p">
-                Windows 7 and later
-            </div>
-        </button>
-    </div>
-</div>
-<div class="wrapper">
-    <div class="faq"><a name="faq"></a>
-        <div class="block_head">Frequently asked questions</div>
-        <table class="faq_table">
-            <tr>
-                <td class="faq_table_question">How does Fortify work?</td>
-                <td class="faq_table_answer">Fortify is a locally installed application that listens on a known TCP
-                    port. Web applications use the Fortify WebCrypto polyfill to communicate with this application
-                    which enables the web application to use smart cards, security tokens and locally installed
-                    certificates.
-                </td>
-            </tr>
-            <tr>
-                <td class="faq_table_question">What smart cards do you support?</td>
-                <td class="faq_table_answer">Generally Fortify should work with any PKCS#11 enabled smart card. For
-                    it to work though it needs to know which driver to load for a given smart card.
-                    <details class="details" open="open">
-                        <summary class="summary"><span class="details_span">Collapse table</span></summary>
-                        <table class="support_table">
-                            <tr>
-                                <th class="th card_name">Card</th>
-                                <th class="th">Mac OS</th>
-                                <th class="th">Windows</th>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">Gemalto IDPrime v2+ .NET</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/checked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">NXP JCOP J3D</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/unchecked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">Aladdin eToken PRO USB 72K Java</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/checked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">SafeNet e Token 5100</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/checked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">Datakey 32K PKI Smart Card Model 330</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/checked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">Yubico Yubikey NEO OTP+U2F+CCID</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/checked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">Yubico Yubikey 4 OTP+U2F+CCID</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/checked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">Broken EstEID 1.1 warm</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/unchecked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">EstEID 1.0 cold</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/unchecked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">EstEID 1.0 cold</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/unchecked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">EstEID 1.0 cold 2006</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/unchecked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">EstEID 1.0 warm 2006</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/unchecked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">EstEID 1.1 cold</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/unchecked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">EstEID 3.0 (dev1) cold</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/unchecked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">EstEID 3.0 (dev1) warm</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/unchecked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">EstEID 3.0 (18.01.2011) warm</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/unchecked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">EstEID 3.5 cold</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/unchecked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">EstEID 3.0 (dev2) warm</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/unchecked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">AzeDIT 3.5 cold</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/unchecked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">Rutoken ECP (DS)</td>
-                                <td class="td mac"><img src="images/unchecked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/checked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">PivKey T800</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/checked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">PivKey T600</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/checked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">USG:Executive Office of the President</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/unchecked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">USG:Department of Veterans Affairs</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/unchecked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">USG:State Department</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/unchecked_icon.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td class="td card_name">Gemalto IDPrime MD 840 (PKI)</td>
-                                <td class="td mac"><img src="images/checked_icon.png" alt=""></td>
-                                <td class="td win"><img src="images/checked_icon.png" alt=""></td>
-                            </tr>
-                        </table>
-                    </details>
-                </td>
-            </tr>
-            <tr>
-                <td class="faq_table_question">What Browsers does Fortify support?</td>
-                <td class="faq_table_answer">IE 11, Edge, Safari, Firefox, and Chrome</td>
-            </tr>
-            <tr>
-                <td class="faq_table_question">What Operating Systems does Fortify support?</td>
-                <td class="faq_table_answer">OSX, Windows 7 and later</td>
-            </tr>
-        </table>
-    </div>
-</div>
-<div class="footer_bg">
     <div class="wrapper">
-        <footer class="footer">
-            <div class="copyright">
-                <div class="copyright_h">© 2016. Peculiar Ventures, Inc. All rights reserved.
-                    <div class="copyright_p">Terms and Services</div>
+        <div class="download"><a name="download"></a>
+            <div class="block_head">Download App</div>
+            <button class="download_button">
+                <img class="download_img" src="images/mac_icon.png" alt="">
+                <div class="download_description">
+                    Download for Mac
                 </div>
-            </div>
-            <div class="footer_icons">
-                <img class="footer_img" src="images/footer_icon_1.png" alt="">
-                <img class="footer_img" src="images/footer_icon_2.png" alt="">
-            </div>
-            <div class="footer_nav">
-                <a class="footer_a" href="#how_it_works">How it works</a>
-                <a class="footer_a" href="https://github.com/PeculiarVentures/fortify">GitHub </a>
-                <a class="footer_a" href="#download">Download</a>
-                <a class="footer_a" href="#faq">FAQ</a>
-            </div>
-        </footer>
+                <div class="download_description_p">
+                    macOS 10.9 and later
+                </div>
+            </button>
+            <button class="download_button">
+                <img class="download_img" src="images/win_icon.png" alt="">
+                <div class="download_description">
+                    Download for Windows
+                </div>
+                <div class="download_description_p">
+                    Windows 7 and later
+                </div>
+            </button>
+        </div>
     </div>
-</div>
+    <div class="wrapper">
+        <div class="faq"><a name="faq"></a>
+            <div class="block_head">Frequently asked questions</div>
+            <table class="faq_table">
+                <tr>
+                    <td class="faq_table_question">How does Fortify work?</td>
+                    <td class="faq_table_answer">Fortify is a locally installed application that listens on a known TCP
+                        port. Web applications use the Fortify WebCrypto polyfill to communicate with this application
+                        which enables the web application to use smart cards, security tokens and locally installed
+                        certificates.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="faq_table_question">What smart cards do you support?</td>
+                    <td class="faq_table_answer">Generally Fortify should work with any PKCS#11 enabled smart card. For
+                        it to work though it needs to know which driver to load for a given smart card.
+                        <details class="details" open="open">
+                            <summary class="summary"><span class="details_span">Collapse table</span></summary>
+                            <table class="support_table">
+                                <tr>
+                                    <th class="th card_name">Card</th>
+                                    <th class="th mac">Mac OS</th>
+                                    <th class="th win">Windows</th>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">Gemalto IDPrime v2+ .NET</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">NXP JCOP J3D</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">Aladdin eToken PRO USB 72K Java</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">SafeNet e Token 5100</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">Datakey 32K PKI Smart Card Model 330</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">Yubico Yubikey NEO OTP+U2F+CCID</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">Yubico Yubikey 4 OTP+U2F+CCID</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">Broken EstEID 1.1 warm</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">EstEID 1.0 cold</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">EstEID 1.0 cold</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">EstEID 1.0 cold 2006</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">EstEID 1.0 warm 2006</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">EstEID 1.1 cold</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">EstEID 3.0 (dev1) cold</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">EstEID 3.0 (dev1) warm</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">EstEID 3.0 (18.01.2011) warm</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">EstEID 3.5 cold</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">EstEID 3.0 (dev2) warm</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">AzeDIT 3.5 cold</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">Rutoken ECP (DS)</td>
+                                    <td class="td mac"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">PivKey T800</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">PivKey T600</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">USG:Executive Office of the President</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">USG:Department of Veterans Affairs</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">USG:State Department</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/unchecked_icon.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="td card_name">Gemalto IDPrime MD 840 (PKI)</td>
+                                    <td class="td mac"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                    <td class="td win"><img class="table_img" src="images/checked_icon.png" alt=""></td>
+                                </tr>
+                            </table>
+                        </details>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="faq_table_question">What Browsers does Fortify support?</td>
+                    <td class="faq_table_answer">IE 11, Edge, Safari, Firefox, and Chrome</td>
+                </tr>
+                <tr>
+                    <td class="faq_table_question">What Operating Systems does Fortify support?</td>
+                    <td class="faq_table_answer">OSX, Windows 7 and later</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer_bg">
+        <div class="wrapper">
+            <footer class="footer">
+                <div class="copyright">
+                    <div class="copyright_h">© 2016. Peculiar Ventures, Inc. All rights reserved.
+                        <div class="copyright_p">Terms and Services</div>
+                    </div>
+                </div>
+                <div class="footer_icons">
+                    <img class="footer_img" src="images/lock.png" alt="">
+                    <img class="footer_img" src="images/footer_icon.png" alt="">
+                </div>
+                <div class="footer_nav">
+                    <a class="footer_a" href="#how_it_works">How it works</a>
+                    <a class="footer_a" href="https://github.com/PeculiarVentures/fortify">GitHub </a>
+                    <a class="footer_a" href="#download">Download</a>
+                    <a class="footer_a" href="#faq">FAQ</a>
+                </div>
+            </footer>
+        </div>
+    </div>
 
 </body>
 
