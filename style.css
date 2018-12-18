@@ -264,6 +264,7 @@ body {
 }
 
 .mac, .win {
+    text-align: center;
     width: 17.5%;
 }
 
