@@ -18,17 +18,17 @@ body {
 }
 
 .header_bg {
-    top: -13px;
-    max-width: 1980px;
-    position: absolute;
-    z-index: -1;
-    background-color: #222628;
+    background: #24282a url("images/bg_header.png") no-repeat center;
+    position: relative;
 }
 
 .header {
-    display: inline;
-    padding: 0px 65px 65px 0;
-    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 65px 0 65px;
+    top: 40px;
+    max-width: 1265px;
     margin: 0 auto;
     color: #ffffff;
 }
@@ -56,11 +56,10 @@ body {
 
 .menu {
     float: right;
-    padding-top: 15px;
+    padding-top: 5px;
 }
 
 .menu_item {
-    padding-right: 35px;
     text-decoration: none;
     color: #ffffff;
     opacity: 0.7;
@@ -68,10 +67,14 @@ body {
     letter-spacing: 0.34px;
 }
 
+.menu_item:not(:last-child) {
+    padding-right: 35px;
+}
+
 .header_description {
     max-width: 706px;
     padding-top: 135px;
-    padding-bottom: 70px;
+    padding-bottom: 470px;
     text-align: left;
     color: #ffffff;
 }
@@ -91,27 +94,37 @@ body {
     line-height: 18px;
 }
 
-.button {
+.header_btn {
     width: 125px;
     height: 36px;
+    padding: 8px 15px;
     color: #ffffff;
     font-size: 13px;
+    text-decoration: none;
     border-radius: 2px;
     background-image: linear-gradient(180deg, #4da3fc 0%, #027eff 100%);
+    cursor: pointer;
 }
 
 .slider {
-    margin: 0 auto;
+    /*transform: translate(0, -50%);*/
+    position: absolute;
+    top: 60%;
+    box-shadow: 0 0 20px rgba(13, 17, 25, 0.35);
+}
+
+.work_description {
+    padding-top: 200px;
 }
 
 .work_description_bg {
-    width: 100%;
-    margin: 0 auto;
     background: #faf9f9 no-repeat center;
+    padding-top: 130px;
 }
 
 .block_head {
     padding-top: 100px;
+    padding-bottom: 60px;
     color: #282e32;
     font-family: "Open Sans Semibold", sans-serif;
     font-size: 28px;
@@ -126,7 +139,7 @@ body {
 
 .work_description_elems {
     width: 100%;
-    padding-top: 47px;
+    /*padding-top: 47px;*/
     padding-bottom: 100px;
 }
 
@@ -164,7 +177,9 @@ body {
     margin-right: 5px;
     width: calc((100% / 2) - 10px);
     height: 100px;
+    background-color: #fefdfd;
     border-radius: 5px;
+    outline: none;
     border: 1px solid #979797;
     display: inline-block;
 }
@@ -192,26 +207,52 @@ body {
     text-align: left;
 }
 
-.faq_table{
+.faq_table {
     border-collapse: collapse;
     border: none;
+    color: #3b4044;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
 }
 
-.faq_table_question, .faq_table_answer::not(:last-child){
+.faq_table_question,
+.faq_table_answer:not(last-child) {
     border-bottom: #3b4044;
 }
 
-details summary::-webkit-details-marker {
+.faq_table_question,
+.faq_table_answer {
+    border-bottom: #3b4044;
+    vertical-align: top;
+    padding-bottom: 90px;
+}
+
+.faq_table_question {
+    width: 40%;
+}
+
+.faq_table_answer {
+    width: 60%;
+}
+
+.details summary::-webkit-details-marker {
     color: #0097fc;
     outline: 0;
 }
 
-.details_span {
-    color: #0097fc;
+.details {
+    padding-top: 30px;
 }
 
-.table {
+.details_span {
+    color: #0097fc;
+
+}
+
+.support_table {
     border-collapse: collapse;
+    width: 100%;
 }
 
 .th, .td {
@@ -223,6 +264,11 @@ details summary::-webkit-details-marker {
 
 .card_name {
     text-align: left;
+    width: 65%;
+}
+
+.mac, .win {
+    width: 17.5%;
 }
 
 .footer_bg {
@@ -234,6 +280,7 @@ details summary::-webkit-details-marker {
     display: inline-block;
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 45px;
 }
 
 .copyright {
@@ -244,11 +291,13 @@ details summary::-webkit-details-marker {
     color: #ffffff;
     font-size: 15px;
     opacity: 0.5;
-    letter-spacing: 0.34;
+    letter-spacing: 0.34px;
 }
 
 .copyright_p {
+    padding-top: 8px;
     font-size: 13px;
+    opacity: 0.3;
 }
 
 .footer_a {
@@ -256,6 +305,10 @@ details summary::-webkit-details-marker {
     color: #ffffff;
     opacity: 0.5;
     font-size: 13px;
+}
+
+.footer_a:not(last-child) {
+    padding-right: 28px;
 }
 
 .footer_icons {
