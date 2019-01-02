@@ -27,10 +27,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 40px 65px 0 65px;
+    margin: 0 65px;
+    padding-top: 40px;
     top: 40px;
-    max-width: 1265px;
-    margin: 0 auto;
     color: #ffffff;
     font-size: 0;
 }
@@ -42,6 +41,8 @@ body {
 
 .logo:hover {
     cursor: pointer;
+    opacity: 0.4;
+    transition: top 1s ease-out 0.5s;
 }
 
 .logo_name {
@@ -69,18 +70,22 @@ body {
 }
 
 .menu_item {
-    padding-left: 35px;
+    margin-left: 35px;
+}
+
+.menu_item:hover {
+    opacity: 0.3;
+    transition: top 1s ease-out 0.5s;
 }
 
 .header_description {
-    max-width: 706px;
-    padding-top: 135px;
-    padding-bottom: 470px;
+    padding: 135px 20px 470px 20px;
     text-align: left;
     color: #ffffff;
 }
 
 .header_description_h {
+    max-width: 706px;
     font-size: 34px;
     line-height: 44px;
     letter-spacing: 0.3px;
@@ -107,9 +112,15 @@ body {
     cursor: pointer;
 }
 
+.header_btn:hover {
+    opacity: 0.7;
+    transition: top 1s ease-out 0.5s;
+}
+
 .slider {
     position: absolute;
     top: 60%;
+    max-width: 1004px;
 }
 
 .slider .slider_img {
@@ -121,11 +132,12 @@ body {
     box-shadow: 0 0 20px rgba(13, 17, 25, 0.35);
 }
 
-.slider_nav{
+.slider_nav {
     display: flex;
     justify-content: center;
     padding-top: 10px;
 }
+
 .container {
     display: inline-block;
     padding-left: 5px;
@@ -145,15 +157,16 @@ body {
     border-radius: 50%;
 }
 
-.container:hover input ~ .check_mark {
+.container:hover input~.check_mark {
     background-color: #ccc;
 }
-.container input:checked ~ .check_mark {
+
+.container input:checked~.check_mark {
     background-color: #4da3fc;
 }
 
 .work_description {
-    padding-top: 200px;
+    padding-top: 20%;
 }
 
 .work_description_bg {
@@ -179,7 +192,6 @@ body {
 
 .work_description_elems {
     width: 100%;
-    /*padding-top: 47px;*/
     padding-bottom: 100px;
 }
 
@@ -192,19 +204,20 @@ body {
 
 .work_description_item {
     display: inline-block;
-    margin: 0 5px;
-    width: calc((100% / 3) - 15px);
+    width: calc(33.3% - 8px);
     vertical-align: top;
     color: #3b4044;
     font-size: 15px;
     line-height: 25px;
 }
 
+.work_description_item:not(:last-child) {
+    margin-right: 12px;
+}
+
 .work_description_img {
     display: block;
-    width: 300px;
-    /* фиксированные значения, так как из авокода тянутся эти img разных размеров */
-    height: 200px;
+    width: 100%;
     margin-bottom: 40px;
     border: 1px solid lightgrey;
 }
@@ -215,8 +228,8 @@ body {
 }
 
 .download_button {
-    margin-right: 5px;
-    width: calc((100% / 2) - 10px);
+    margin-right: 20px;
+    width: calc((100% / 2) - 20px);
     height: 100px;
     background-color: #fefdfd;
     border-radius: 5px;
@@ -228,6 +241,8 @@ body {
 .download_button:hover {
     background-color: #f7fafd;
     cursor: pointer;
+    opacity: 0.7;
+    transition: top 1s ease-out 0.5s;
 }
 
 .download_img {
@@ -353,8 +368,18 @@ body {
     padding-right: 28px;
 }
 
+.footer_a:hover {
+    opacity: 0.3;
+    transition: top 1s ease-out 0.5s;
+}
+
 .footer_icons {
     float: right;
+}
+
+.footer_img:hover {
+    opacity: 0.3;
+    transition: top 1s ease-out 0.5s;
 }
 
 .lock {
@@ -366,85 +391,47 @@ body {
     padding-top: 100px;
 }
 
-@media screen and (max-width: 1250px) {
-    .wrapper {
-        padding: 0 40px;
-        margin: 0 auto;
-    }
-
-    .slider, .slider_img {
-        width: calc(100% - 70px);
-    }
-
-    .no_border {
-        border-bottom: none;
-        padding-bottom: 175px;
-    }
-
-    .work_description_item {
-        display: inline-block;
-        padding-bottom: 35px;
-        width: 100%;
-    }
-
-    .work_description_img {
-        margin-bottom: 15px;
-        min-width: 270px;
-        height: 200px;
-    }
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     .wrapper {
         margin: 0 auto;
         padding: 0 30px;
     }
-
     .header {
-        padding: 25px;
+        margin: 0 25px;
         display: block;
     }
-
     .logo {
         padding: 0;
     }
-
     .menu_item {
         font-size: 12px;
         height: 17px;
         opacity: 0.7;
     }
-
     .header_description {
         padding: 65px 0 100px 0;
     }
-
     .header_description_h {
         font-size: 20px;
         line-height: 30px;
         letter-spacing: -0.31px;
     }
-
     .header_description_p {
         padding-bottom: 60px;
         font-size: 12px;
         line-height: 18px;
         letter-spacing: 0.42px;
     }
-
     .header_btn {
         font-size: 13px;
         letter-spacing: 0.45px;
     }
-
     .slider {
         display: none;
     }
-
     .work_description_bg, .work_description, .work_description_elems {
         padding: 0;
     }
-
     .block_head {
         padding-top: 50px;
         padding-bottom: 10px;
@@ -453,46 +440,17 @@ body {
         line-height: 43px;
         letter-spacing: 0.06px;
     }
-
     .work_description_item {
         display: inline-block;
         padding-bottom: 35px;
-        width: 100%;
     }
-
     .work_description_img {
         margin-bottom: 15px;
-        min-width: 270px;
-        height: 200px;
     }
-
-    .download_button {
-        display: block;
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    .download_img {
-        width: 36px;
-        height: 36px;
-        padding: 21px 12px 12px 18px;
-    }
-
-    .download_description {
-        padding-top: 22px;
-        font-size: 13px;
-    }
-
-    .download_description_p {
-        padding-bottom: 22px;
-        font-size: 12px;
-    }
-
     .faq_table_question, .faq_table_answer {
         display: block;
         width: 100%;
     }
-
     .faq_table_question {
         font-size: 18px;
         line-height: 25px;
@@ -500,7 +458,6 @@ body {
         padding-bottom: 10px;
         border: none;
     }
-
     .faq_table_answer {
         color: #3b4044;
         padding-bottom: 40px;
@@ -508,52 +465,42 @@ body {
         font-size: 15px;
         line-height: 25px;
     }
-
     .support_table {
         font-size: 12px;
         color: #3b4044;
         letter-spacing: -0.20px;
     }
-
     .mac {
         border-left: none;
     }
-
     .card_name {
         border-right: none;
     }
-
     .table_img {
         height: 15px;
         width: 13px;
     }
-
     .td, .th {
         padding: 5px;
         line-height: 18px;
     }
-
     .no_border {
         border-bottom: none;
         padding-bottom: 75px;
     }
-
     .footer {
         position: relative;
         padding-top: 50px;
     }
-
     .footer_nav {
         float: left;
         padding-top: 50px;
     }
-
     .footer_a {
         display: block;
         padding-bottom: 10px;
         letter-spacing: 0.29px;
     }
-
     .footer_icons {
         position: absolute;
         float: right;
@@ -562,24 +509,39 @@ body {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 736px) {
     .wrapper {
         margin: 0 auto;
         padding: 0 25px;
     }
-
-    .slider {
-        display: none;
+    .header_description_h {
+        max-width: 480px;
     }
-
     .work_description_item {
         display: block;
         padding-bottom: 35px;
         width: 100%;
+        height: 100%;
     }
-
     .work_description_img {
         margin-bottom: 15px;
-        width: calc(100% - 10px);
+    }
+    .download_button {
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .download_img {
+        width: 36px;
+        height: 36px;
+        padding: 21px 12px 12px 18px;
+    }
+    .download_description {
+        padding-top: 22px;
+        font-size: 13px;
+    }
+    .download_description_p {
+        padding-bottom: 22px;
+        font-size: 12px;
     }
 }
